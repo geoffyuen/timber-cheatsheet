@@ -27,3 +27,9 @@ Generated html:
 	<li id="menu-item-94" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-94"><a href="#about">About</a></li>
 	<li id="menu-item-95" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-95"><a href="#contact">Contact</a></li>
 	</ul></div>
+
+Change the `div` wrapper to `nav` element for semantic html:
+
+.twig:
+
+	{{ function("wp_nav_menu", "&theme_location=main_menu&container=nav") }}
