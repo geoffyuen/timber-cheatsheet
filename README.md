@@ -1,6 +1,8 @@
 Timber Cheatsheet
 =================
 
+## Because remembering the "Timber" way can be hard.
+
 Menus using wp_nav_menu
 -----------------------
 
