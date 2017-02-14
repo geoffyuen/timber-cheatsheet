@@ -4,7 +4,7 @@ Timber Cheatsheet
 Menus using wp_nav_menu
 -----------------------
 
-Register your menu locations:
+### Register your menu locations:
 
 functions.php:
 
@@ -33,3 +33,9 @@ Change the `div` wrapper to `nav` element for semantic html:
 .twig:
 
 	{{ function("wp_nav_menu", "&theme_location=main_menu&container=nav") }}
+	
+--	
+
+### ACF Image (set to return an ID)
+
+`<img src="{{ TimberImage(youracfthing.theimageidholder).src | resize(150) }}" alt="">`
