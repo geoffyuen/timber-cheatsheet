@@ -38,6 +38,6 @@ Change the `div` wrapper to `nav` element for semantic html:
 	
 --	
 
-### ACF Image (set to return an ID)
+## ACF Image (set to return an ID)
 
 `<img src="{{ TimberImage(youracfthing.theimageidholder).src | resize(150) }}" alt="">`
