@@ -36,6 +36,12 @@ Change the `div` wrapper to `nav` element for semantic html:
 
 	{{ function("wp_nav_menu", "&theme_location=main_menu&container=nav") }}
 	
+Or get rid of the container completely:
+
+.twig:
+
+	{{ function("wp_nav_menu", "&theme_location=main_menu&container=false") }}
+	
 --	
 
 ## ACF Image (set to return an ID)
