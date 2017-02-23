@@ -47,3 +47,7 @@ Or get rid of the container completely:
 ## ACF Image (set to return an ID)
 
 `<img src="{{ TimberImage(youracfthing.theimageidholder).src | resize(150) }}" alt="">`
+
+## Srcset
+
+https://github.com/MINDKomm/Timmy
