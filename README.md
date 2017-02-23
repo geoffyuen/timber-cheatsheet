@@ -51,3 +51,15 @@ Or get rid of the container completely:
 ## Srcset
 
 https://github.com/MINDKomm/Timmy
+
+You can do this:
+
+    <img{{ post.thumbnail|get_timber_image_responsive('custom-6') }}>
+
+To get this:
+
+    <img srcset="http://www.mind.ch/wp-content/uploads/2016/02/header_example-480x206-c-default.jpg 480w,
+    http://www.mind.ch/wp-content/uploads/2016/02/header_example-768x329-c-default.jpg 768w,
+    http://www.mind.ch/wp-content/uploads/2016/02/header_example-1400x600-c-default.jpg 1400w,
+    http://www.mind.ch/wp-content/uploads/2016/02/header_example-2800x1200-c-default.jpg 2800w"
+    sizes="100vw" alt="Your alt text" title="Your image title">
