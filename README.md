@@ -63,3 +63,22 @@ To get this:
     http://www.mind.ch/wp-content/uploads/2016/02/header_example-1400x600-c-default.jpg 1400w,
     http://www.mind.ch/wp-content/uploads/2016/02/header_example-2800x1200-c-default.jpg 2800w"
     sizes="100vw" alt="Your alt text" title="Your image title">
+
+## Get other custom post types while on a page
+
+page.php:
+
+```
+$context = Timber::get_context();
+$post = new TimberPost();
+$context['post'] = $post;
+$context['blog'] = Timber::get_posts( array(
+	'post_type' => 'post',
+	'posts_per_page' => '1'
+) );
+$context['qa'] = Timber::get_posts( array(
+	'post_type' => 'ask_a_gardener',
+	'posts_per_page' => '1'
+) );
+Timber::render( array( 'page-home.twig' ), $context );
+```
